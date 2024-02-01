@@ -1,0 +1,29 @@
+.styleForm {
+    display: flex;
+    flex-direction: column;
+    /* gap: 40px; */
+    border: 2px solid black;
+    height: 250px;
+    width: 250px;
+}
+
+.inputNameForm {
+    margin-top: 50px;
+    margin-left: 20px;
+    width: 200px;
+    height: 30px;
+}
+
+.inputNumberForm {
+    margin: 20px;
+    width: 200px;
+    height: 30px;
+}
+
+.buttonForm {
+    margin-top: 10px;
+    margin-left: 30px;
+    width: 200px;
+    height: 50px;
+  border: 2px solid black;
+}

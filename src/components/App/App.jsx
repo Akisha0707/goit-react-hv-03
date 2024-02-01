@@ -8,6 +8,7 @@ import { useId } from 'react'
 
 
 function App() {
+ 
   const [user, setUser] = useState([
     { id: 'id-1', name: 'Rosie Simpson', number: '459-12-56' },
     { id: 'id-2', name: 'Hermione Kline', number: '443-89-12' },
@@ -16,15 +17,14 @@ function App() {
   ])
 
   const [filterUser, setFilterUser] = useState('')
+  console.log (filterUser)
   
-
   return (
     <div>
         <h1>Phonebook</h1>
-      <input className={css.styleInput} type="text" name='name'/>
-       <ContactForm />
-      <SearchBox />
-     <ContactList user={user} setUser={setUser} />
+      <ContactForm />
+      <SearchBox filterUser={filterUser} setFilterUser={setFilterUser} />
+      <ContactList user={user} setUser={setUser} filterUser={filterUser} setFilterUser={setFilterUser} />
     </div>
   )
 }

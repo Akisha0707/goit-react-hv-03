@@ -1,0 +1,11 @@
+.searchInput {
+  margin-left: 35px;
+  display: block;
+  height: 40px;
+  width: 800px;
+  }
+
+.searchParagraph {
+  margin-left: 30px;
+  margin-bottom: 0;
+}

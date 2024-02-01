@@ -6,7 +6,7 @@ const ContactList = ({ user }) => {
     return (
       
     <ul className={css.userList}>
-            {user.map((item) => { return <Contact key={item.id} item={item} />})}
+            {user.map((item) => {return <Contact key={item.id} item={item} />})}
     </ul>
             
     )
