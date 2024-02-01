@@ -6,7 +6,15 @@
   
 }
 
-.logo {
+.styleInput {
+  margin-left: 35px;
+  display: block;
+  height: 40px;
+  width: 800px;
+  }
+
+
+/* .logo {
   height: 6em;
   padding: 1.5em;
   will-change: filter;
@@ -40,4 +48,4 @@
 
 .read-the-docs {
   color: #888;
-}
+} */

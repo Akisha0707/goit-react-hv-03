@@ -1,11 +1,16 @@
 import { Children } from 'react'
-import css from'./Contact.module.css'
+import css from './Contact.module.css'
+import { ImUser } from "react-icons/im";
+import { BsFillTelephoneFill } from "react-icons/bs";
 
 const Contact = ({item}) => {
-console.log (item)
-  return (
-    <li>nata + </li>
 
+  return (
+    <div className={css.styleElement}>
+      <li className={css.styleName}> <ImUser/> {item.name} </li>
+      <p className={css.styleText}> < BsFillTelephoneFill/> {item.number} </p>
+      <button className={css.styleButton}> Delete </button>
+  </div>
 )  
     
 }

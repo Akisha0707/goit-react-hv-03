@@ -1,3 +1,24 @@
-.userList {
-    font-size: 25pa;
+.styleElement{
+margin-bottom: 30px;
+padding: 20px;
+border: 2px solid black;
+border-radius: 15px;
+display: flex;
+text-align: center;
+gap: 30px;
+}
+
+.styleName {
+font-size: 35px;
+}
+
+.styleText {
+    font-size: 40px;
+}
+
+.styleButton {
+    margin-top: 40px;
+    height: max-content;
+    width: max-content;
+    border: 1px solid black;
 }
