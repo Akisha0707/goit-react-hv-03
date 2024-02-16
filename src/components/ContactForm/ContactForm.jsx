@@ -9,7 +9,7 @@ const userSchema = Yup.object().shape({
     .min(3, 'Name must be at least 3 symb long')
     .max(50, 'Name cannot exceed 50 characters')
     .required('This is a required field'),
-  number: Yup.number().required('This is a required field'),
+  number: Yup.string().required('This is a required field'),
 });
 
 const ContactForm = ({ onAdd }) => {
@@ -24,12 +24,9 @@ const ContactForm = ({ onAdd }) => {
       }}
       validationSchema={userSchema}
       onSubmit={(values, actions) => {
-        onAdd({
-          id: nanoid(),
-          ...values,
-        });
-
+        onAdd({ id: Date.now(), ...values });
         actions.resetForm();
+        // model.id = nanoid();
       }}
     >
       <Form className={css.styleForm}>
@@ -38,7 +35,7 @@ const ContactForm = ({ onAdd }) => {
             Username
           </label>
           <Field className={css.usernameForm} type="text" name="username" id={nameFieldId} />
-          <ErrorMessage className={css.error} name="username" as="span" />
+          <ErrorMessage className={css.error} type="text" name="username" as="span" />
         </div>
 
         <div className={css.wrapNumber}>
